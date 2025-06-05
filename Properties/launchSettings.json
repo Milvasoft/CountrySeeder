@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "CountrySeeder": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Geo_Connection_String": "Username=postgres;Password=N4SQp.qW>6?xwWzg;Server=localhost;Port=5432;Database=finehubdb",
+        "FORCE_SEED": "true"
+      }
+    }
+  }
+}
