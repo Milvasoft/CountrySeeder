@@ -54,6 +54,9 @@ catch (Exception ex)
     Console.WriteLine("Something went wrong! {0}", ex.Message);
 }
 
+Console.WriteLine("\nPress Enter to exit...");
+Console.ReadLine();
+
 static async Task ImportJsonDataAsync(string filePath, AppDbContext dbContext)
 {
     using var stream = File.OpenRead(filePath);

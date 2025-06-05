@@ -21,11 +21,11 @@ It uses `EFCore.BulkExtensions` for blazing-fast data insert and supports comman
 ```
 
 CountrySeeder/
-├── Program.cs                 → Entry point with seeding logic
-├── AppDbContext.cs           → EF Core DbContext
-├── Entities/                 → Country, State, City entities
-├── Models/                   → CountryModel, StateModel, CityModel (for deserialization)
-├── countries\_states\_cities.json  → JSON data source (not included in repo)
+├── Program.cs						   → Entry point with seeding logic
+├── AppDbContext.cs					   → EF Core DbContext
+├── Entities/						   → Country, State, City entities
+├── Models/							   → CountryModel, StateModel, CityModel (for deserialization)
+├── countries\_states\_cities.json     → JSON data source (not included in repo)
 
 ````
 
@@ -72,6 +72,11 @@ set Geo_Connection_String=Host=localhost;Database=GeoDb;Username=postgres;Passwo
 dotnet run
 ```
 
+#### Run executable in powershell:
+
+```bash
+CountrySeeder.exe "Username=;Password=;Server=;Port=5432;Database=yourdb" --force
+```
 ---
 
 ### 3. 🧪 Optional Flags
